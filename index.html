@@ -2,26 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="author" content="BUAP, Coordinación de Básicas">
+    <meta name="description" content="Facultad de Ingeniería, Coordinación de Básicas">
+    <meta name="keywords" content="" >
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <title>Coordinación de Básicas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Coordinación de Básicas</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Reglamento</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="main">
+    <div class="division-azul">
+    </div>
+
+    <div class="main">
+        <header>
+            <h1>Coordinación<br>de Básicas</h1>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Reglamento</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="container1">
             <div class="slider">
             </div>
@@ -37,29 +45,70 @@
                 torquent per conubia nostra, per inceptos himenaeos.
             </p>
         </div>
-        <div class="avisos">
-            <ul>
-                <li>
-                    <h2>Aviso 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                    <h2>Aviso 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                    <h3>Aviso 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-            </ul>
+        <div class="news">
+            <h2>Noticias, Avisos y Eventos</h2>
+            <div class="noticias flexslider">
+                <ul class="slides">
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="http://lorempixel.com/400/200/" />
+                            <div class="asunto">
+                                <h4>Evento 1</h4>
+                                <p>02 de octubre 2015</p>
+                                <p>Coordinación de Básicas</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="http://lorempixel.com/400/200/" />
+                            <div class="asunto">
+                                <h4>Evento 2</h4>
+                                <p>7 de octubre 2015</p>
+                                <p>Coordinación de Básicas</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="http://lorempixel.com/400/200/" />
+                            <div class="asunto">
+                                <h4>Evento 3</h4>
+                                <p>10 de octubre 2015</p>
+                                <p>Coordinación de Básicas</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </div>
     <footer>
-        <div>
-            <img src="#" alt="BUAP">
-            <img src="#" alt="Facultad de Ingeniería">
+        <div class="center">
+            <div class="imagenes">
+                <a href="#" target="_blank">
+                    <img src="img/escudo_botton.png" alt="BUAP" class="buap">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="img/buap-ingenieria.png" alt="Facultad de Ingeniería" class="facultad">
+                </a>
+            </div>
+            <p>Copyright &copy; 2015. Facultad de Ingeniería BUAP. Todos los derechos reservados.</p>
         </div>
-        <p>Copyrights &copy; 2015</p>
     </footer>
+
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        // Inicia el slider
+		$('.flexslider').flexslider({
+			animation: "slide",				//String: Select your animation type, "fade" or "slide"
+	    	easing: "easeInBack",			//{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+	    	slideshowSpeed: 3500,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+		    animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
+	    	pauseOnAction: false,           //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+			pauseOnHover: true,            	//Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+	    	randomize: false,               //Boolean: Randomize slide order
+		});
+    </script>
 </body>
 </html>
