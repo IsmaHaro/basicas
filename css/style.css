@@ -25,6 +25,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 .division-azul{
     width: 100%;
@@ -54,10 +55,10 @@ h1{
 }
 .menu-principal li a{
     text-decoration: none;
-    color: rgb(0,59,92);
+    color: #00B5E2;
 }
-.menu-principal li:hover{
-    border-bottom: 1px solid rgb(0,59,92);
+.menu-principal li:hover a{
+    color: rgb(0,59,92);
 }
 .main{
     width: 90%;
@@ -107,25 +108,30 @@ footer{
     padding: 20px 0;
     width: 100%;
     background-color: #003B5C;
+    display: table;
+}
+footer .center{
+    width: 70%;
+    margin: 0 auto;
+}
+footer .trow{
+    display: table-row;
+}
+footer .trow div{
+    vertical-align: middle;
+    display: table-cell;
+    padding: 10px;
 }
 footer img.buap{
     width:120px;
     height: auto;
 }
 footer img.facultad{
-    width:250px;
+    width:300px;
     height: auto;
-}
-footer div.imagenes{
-    width: 40%;
-    display: inline-block;
 }
 footer p{
     color: #00B5E2;
-    width: 38%;
     display: inline-block;
-}
-footer .center{
-    width: 70%;
-    margin: 0 auto;
+    font-size: 80%;
 }
