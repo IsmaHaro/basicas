@@ -44,8 +44,9 @@ h1,.menu-principal{
     display: inline-block;
 }
 h1{
-    color: rgb(0,59,92);
+    color: rgb(0,59,92) !important;
     text-align: center;
+    font-family: 'Open Sans', sans-serif !important;
 }
 .menu-principal{
     width: 70%;
@@ -75,6 +76,10 @@ h1{
 .menu-principal li:hover a{
     color: rgb(0,59,92);
 }
+.menu-principal .current{
+    color: rgb(0,59,92);
+}
+
 .main{
     width: 90%;
     margin: 0 auto;
@@ -97,6 +102,7 @@ h1{
 .container1 .bienvenidos{
     margin-top: 10px;
     padding: 7px;
+    margin-bottom: 50px;
 }
 .news{
     width: 28%;
@@ -178,7 +184,7 @@ footer p{
 
 
 /********************************
- *NOSOTROS
+ * NOSOTROS
  *********************************/
  .container2{
     margin-top: 40px;
@@ -204,3 +210,132 @@ footer p{
     border-radius: 50%;
 }
 
+
+/********************************
+ * EVENTOS
+ *********************************/
+.container2{
+    margin-top: 40px;
+}
+
+.container2 h2{
+    padding-left: 40px
+}
+.eventos{
+    list-style: none;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.eventos li{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.eventos li img{
+    width: 28%;
+    border-radius: 15px;
+}
+
+.eventos li h3{
+    color: rgb(0,59,92);
+}
+
+.eventos li h3:hover{
+    color: #00517e;
+}
+
+.eventos li .info{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4%;
+}
+
+.eventos a{
+    text-decoration: none;
+    color: black;
+}
+
+.r-more{
+    color: rgb(0,59,92);
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid rgb(0,59,92);
+    text-align: center;
+    padding: 5px;
+}
+
+.r-more:hover{
+    color: #ccc;
+    background-color: rgb(0,59,92);
+}
+
+/********************************
+ * EVENTO
+ *********************************/
+
+ .evento{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .evento img{
+    width: 50%;
+    border-radius: 30px;
+ }
+
+ .evento .nombre-evento{
+    text-align: center;
+ }
+
+ .evento .informacion{
+    text-align: left;
+    margin-bottom: 50px;
+ }
+
+ .evento .informacion,
+ .evento td{
+    padding: 10px;
+ }
+
+ .evento tr:nth-child(2n){
+    background-color: #E3E3E3;
+ }
+
+ .evento tr:nth-child(2n+1){
+    background-color: #a0ddff;
+ }
+
+ .evento td.icono{
+    text-align: center;
+ }
+
+ .evento td.descripcion{
+    background-color: white;
+ }
+
+ .evento span.descripcion{
+    color: rgb(0,59,92);
+    font-weight: 700;
+    font-variant: small-caps;
+    font-size: 130%;
+ }
+
+ /********************************
+ * CONTACTO
+ *********************************/
+
+.contacto{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contacto input{
+    display: block;
+
+}
+.contacto{
+    margin-bottom: 50px;
+}
