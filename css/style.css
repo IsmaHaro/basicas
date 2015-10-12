@@ -32,6 +32,13 @@ body{
     height: 30px;
     background-color: rgb(0,59,92);
 }
+.division-azul p{
+    margin: 0;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+    padding-top: 3px;
+}
 h1,.menu-principal{
     width: 28%;
     display: inline-block;
@@ -57,6 +64,14 @@ h1{
     text-decoration: none;
     color: #00B5E2;
 }
+.menu-principal li a{
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
 .menu-principal li:hover a{
     color: rgb(0,59,92);
 }
@@ -64,14 +79,29 @@ h1{
     width: 90%;
     margin: 0 auto;
 }
+.slider{
+    margin: 50px 0 10px!important;
+}
+.slider img{
+    width: 100%;
+}
 .container1{
     vertical-align: top;
     width: 68%;
     display: inline-block;
+    margin-top: 30px;
+}
+.container1 h2{
+    padding: 7px;
+}
+.container1 .bienvenidos{
+    margin-top: 10px;
+    padding: 7px;
 }
 .news{
     width: 28%;
     display: inline-block;
+    margin-top: 30px;
 }
 .news h2{
     background: #002d4a;
@@ -83,26 +113,36 @@ h1{
     padding: 5px 0;
     text-align: center;
     width: 100%;
+    font-weight: 300;
 }
-.btn-noticias{
-    border: 1px solid #fff;
-    color: #fff;
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-weight: 800;
-    width: 25px;
-    line-height: 25px;
-    height: 25px;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+.news .asunto{
+    background: #002d4a;
+    border-radius: 2px;
+}
+.news .asunto{
+    color: white;
     text-decoration: none;
+    text-align: center;
+    padding: 1px 5px;
 }
-.slider{
-    width: 100%;
-    height: 300px;
-    background-color: #ccc;
+
+.news .asunto h4,
+.news .asunto p{
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.news .asunto h4{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00B5E2;
+}
+
+.news .asunto h4:hover,
+.news .asunto p:hover{
+    color: #00B5E2;
 }
 footer{
     padding: 20px 0;
@@ -135,3 +175,32 @@ footer p{
     display: inline-block;
     font-size: 80%;
 }
+
+
+/********************************
+ *NOSOTROS
+ *********************************/
+ .container2{
+    margin-top: 40px;
+ }
+ .integrantes{
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .integrantes li{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+ }
+
+.integrantes a{
+    text-decoration: none;
+    color: #5E5D5D;
+}
+
+.integrantes img{
+    border-radius: 50%;
+}
+

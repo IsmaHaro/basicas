@@ -5,7 +5,7 @@
     <meta name="author" content="BUAP, Coordinación de Básicas">
     <meta name="description" content="Facultad de Ingeniería, Coordinación de Básicas">
     <meta name="keywords" content="" >
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -16,6 +16,7 @@
 </head>
 <body>
     <div class="division-azul">
+        <p>Otoño 2015</p>
     </div>
 
     <div class="main">
@@ -24,7 +25,7 @@
             <nav class="menu-principal">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Reglamento</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -32,9 +33,26 @@
             </nav>
         </header>
         <div class="container1">
-            <div class="slider">
+            <div class="flexslider banner-slider">
+                <ul class="slides">
+                    <li data-thumb="img/slider/im1.jpg">
+                        <img src="img/slider/im1.jpg" />  
+                    </li>
+                    <li data-thumb="img/slider/im6.jpg">
+                        <img src="img/slider/im6.jpg" />  
+                    </li>
+                    <li data-thumb="img/slider/im3.jpg">
+                        <img src="img/slider/im3.jpg" />  
+                    </li>
+                    <li data-thumb="img/slider/im4.jpg">
+                        <img src="img/slider/im4.jpg" />  
+                    </li>
+                </ul>
             </div>
-            <p>
+            <h2>
+                Bienvenidos
+            </h2>
+            <p class="bienvenidos">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Nunc nulla ipsum, vulputate ac enim ut, dapibus ornare magna.
                 Aliquam facilisis vitae nisl non lacinia. Quisque et dolor dui. Quisque non eleifend massa.
@@ -47,12 +65,12 @@
             </p>
         </div>
         <div class="news">
-            <h2>Noticias, Avisos y Eventos</h2>
-            <div class="noticias flexslider">
+            <div class="noticias flexslider news-slider">
+                <h2>Noticias, Avisos y Eventos</h2>
                 <ul class="slides">
                     <li>
                         <a href="#" target="_blank">
-                            <img src="http://lorempixel.com/400/200/" />
+                            <img src="img/slider/im6.jpg" />
                             <div class="asunto">
                                 <h4>Evento 1</h4>
                                 <p>02 de octubre 2015</p>
@@ -62,7 +80,7 @@
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                            <img src="http://lorempixel.com/400/200/" />
+                            <img src="img/slider/im7.jpg" />
                             <div class="asunto">
                                 <h4>Evento 2</h4>
                                 <p>7 de octubre 2015</p>
@@ -106,16 +124,28 @@
 
     <script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <script type="text/javascript">
-        // Inicia el slider
-		$('.flexslider').flexslider({
+        // Inicia el slider (banner)
+		$('.banner-slider').flexslider({
 			animation: "slide",				//String: Select your animation type, "fade" or "slide"
 	    	easing: "easeInBack",			//{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
-	    	slideshowSpeed: 3500,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-		    animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
+	    	slideshowSpeed: 4000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+		    animationSpeed: 300,            //Integer: Set the speed of animations, in milliseconds
 	    	pauseOnAction: false,           //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
 			pauseOnHover: true,            	//Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 	    	randomize: false,               //Boolean: Randomize slide order
+            controlNav: "thumbnails"
 		});
+
+        // Inicia el slider (news)
+        $('.news-slider').flexslider({
+            animation: "slide",             //String: Select your animation type, "fade" or "slide"
+            easing: "easeInBack",           //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+            slideshowSpeed: 3500,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+            animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
+            pauseOnAction: false,           //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+            pauseOnHover: true,             //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+            randomize: false,               //Boolean: Randomize slide order
+        });
     </script>
 </body>
 </html>
