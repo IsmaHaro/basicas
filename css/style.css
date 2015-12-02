@@ -220,8 +220,13 @@ footer p{
     color: #5E5D5D;
 }
 
+.integrantes h3{
+    font-size: 16px;
+}
+
 .integrantes img{
-    border-radius: 50%;
+    border-radius: 2px;
+    width: 150px;
 }
 
 
